@@ -26,33 +26,33 @@
 
 body {
   display: flex;
-  justify-content: center; /* Центрування по горизонталі */
-  align-items: center; /* Центрування по вертикалі */
-  height: 100vh; /* Висота сторінки на весь екран */
-  margin: 0; /* Відсутність зовнішнього відступу */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0; 
 }
 
 ul {
-  list-style-type: none; /* Вимкнення стандартних маркерів списку */
-  padding: 0; /* Відсутність внутрішніх відступів */
+  list-style-type: none; 
+  padding: 0; 
 }
 
 li {
-  margin: 10px; /* Відстань між кнопками */
+  margin: 10px; 
 }
 
 a {
-  display: inline-block; /* Дозволяє застосувати ширину, висоту та відступи */
-  padding: 10px 20px; /* Внутрішні відступи (розмір кнопки) */
-  background-color: #007BFF; /* Колір фону кнопки */
-  color: white; /* Колір тексту */
-  text-decoration: none; /* Вимкнення підкреслення тексту */
-  border-radius: 5px; /* Закруглені кути */
-  transition: background-color 0.3s ease; /* Анімація при наведенні */
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #007BFF; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
 }
 
 a:hover {
-  background-color: #0056b3; /* Темніший фон при наведенні */
+  background-color: #0056b3; 
 }
 
 .timer {
