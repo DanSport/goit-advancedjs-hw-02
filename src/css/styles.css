@@ -6,13 +6,90 @@
 */
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center; /* Центрування по вертикалі */
+  height: 100vh; /* Висота сторінки на весь екран */
+  margin: 0; /* Відсутність зовнішнього відступу */
+}
+
+ul {
+  list-style-type: none; /* Вимкнення стандартних маркерів списку */
+  padding: 0; /* Відсутність внутрішніх відступів */
+}
+
+li {
+  margin: 10px; /* Відстань між кнопками */
+}
+
+a {
+  display: inline-block; /* Дозволяє застосувати ширину, висоту та відступи */
+  padding: 10px 20px; /* Внутрішні відступи (розмір кнопки) */
+  background-color: #007BFF; /* Колір фону кнопки */
+  color: white; /* Колір тексту */
+  text-decoration: none; /* Вимкнення підкреслення тексту */
+  border-radius: 5px; /* Закруглені кути */
+  transition: background-color 0.3s ease; /* Анімація при наведенні */
+}
+
+a:hover {
+  background-color: #0056b3; /* Темніший фон при наведенні */
+}
+
+.timer {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer .value {
+  font-size: 32px;
+  font-family: monospace;
+}
+
+.timer .label {
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 12px;
+}
+
+.form label {
+  width: 100%;
+}
+
+input[name='delay'] {
+  display: block;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+}
